@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <script defer src="/js/login.js"></script>
+    <title>Register</title>
+    <script defer src="/js/register.js"></script>
 </head>
 <body>
-    <h1>Login</h1>
+    <h1>Register</h1>
     <form id="form">
+
+        <!-- USERNAME -->
         <label for="username">Username</label>
         <input id="username" name="username" type="text" maxlength="64" minlength="3" required>
+
+        <!-- EMAIL -->
+        <label for="email">Email</label>
+        <input id="email" name="email" type="text" maxlength="64" minlength="3" required>
+
+        <!-- PASSWORD -->
         <label for="password">Password</label>
         <input id="password" name="password" type="password" maxlength="64" minlength="3" required>
         <button id="show-password-button" type="button">Show Password</button>
-        <button id="submit" type="submit">Login</button>
+        <button id="submit" type="submit">Register</button>
     </form>
 </body>
 </html>

@@ -6,9 +6,11 @@ const sendData = async (e) => {
         const formData = new FormData(e.target);
         const data = JSON.stringify({
             username: formData.get("username"),
+            email: formData.get("email"),
             password: formData.get("password"),
         })
-        const res = await fetch("/login", {
+
+        const res = await fetch("/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
